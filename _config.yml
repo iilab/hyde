@@ -1,26 +1,31 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown:         kramdown
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            Content as Code
+tagline:          'A partnership to support content re-use and improve maintainability of content.'
+description:      'A partnership to support content re-use and improve maintainability of content.'
+url:              http://iilab.github.io/contentascode-site
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Jun Matsushita'
+  url:            https://twitter.com/iilab
 
-paginate:         5
-
-# Custom vars
-version:          2.1.0
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..3
+  enable_coderay: false
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/iilab/contentascode-site
+
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
